@@ -791,25 +791,19 @@ show_magicians()
 //• Use an if-else chain inside the loop to print the proper ordinal ending for each number. Your output should read "1st 2nd 3rd 4th 5th 6th 7th 8th 9th", and each result should be on a separate line.
 
 
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-for (let i = 0; i < numbers.length; i++) {
-let number = numbers[i];
-switch(number) {
-case 1:
-console.log("1st");
-break;
-case 2:
-console.log("2nd");
-break;
-case 3:
-console.log("3rd");
-break;
-default:
-console.log(number + "th");
-break;
-}}
-
+let listofnumbers = [1,2,3,4,5,6,7,8,9,10];
+for (let numbers_list of listofnumbers) {
+    if(numbers_list == 1){
+        console.log("1st")
+    };
+    if(numbers_list == 2){
+        console.log("2nd")
+    };
+    if(numbers_list == 3){console.log("3rd")}
+    if(numbers_list>=4 && numbers_list <=10){
+        console.log(`${numbers_list}th`)
+    };
+}
 
 
 //Question : 45 Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
