@@ -731,17 +731,12 @@ console.log([...places].sort().reverse())
 // Question : 40  Album: Write a function called make_album() that builds a Object describing a music album. The function should take in an artist name and an album title, and it should return a Object containing these two pieces of information. Use the function to make three dictionaries representing different albums. Print each return value to show that Objects are storing the album information correctly. Add an optional parameter to make_album() that allows you to store the number of tracks on an album. If the calling line includes a value for the number of tracks, add that value to the album’s Object. Make at least one new function call that includes the number of tracks on an album.
 
 
+function make_album(artist : string , album :string , tracks :number){
 
-interface Album {
-    artist: string;
-    title: string;
-    tracks: number;
-}
-function album(artist: string, title: string, tracks?: number){
-    console.log(`artist : ${artist} , title :${title} , tracks : ${tracks}`)
-}
-album("Taylor Swift" , "Lover" , 4)
-album("Salena Gomaz" , "Rare" , 13)
+    console.log(`The artist : ${artist} , The album : ${album}, Tracks : ${tracks}`)
+};
+make_album("Taylor swift" , "Lover" , 18);
+make_album("Salena Gomez" , "Rare" , 13);
 
 
 // Question : 41  Magicians: Make a array of magician’s names. Pass the array to a function called show_magicians(), which prints the name of each magician in the array.
@@ -751,9 +746,7 @@ let magicians_name: string[] = ["Harry Houdini", "Criss Angel"];
 
 function show_magicians(names__: string[] = magicians_name) {
     console.log("The names of the magicians are");
-    names__.forEach(name__ => {
-        console.log(name__);
-    });
+    ; console.log(`${magicians_name}`)
 }
 
 show_magicians();
@@ -766,12 +759,14 @@ show_magicians();
 let magicians_name_: string[] = ["Harry Houdini", "Criss Angel"];
 
 function make_great(names: string[] = magicians_name_) {
-console.log("The great magicians are:");
-let magician= names.map(name => "the Great " + name);
-console.log(magician);
+
+for(let magicians_ of names){
+    console.log("The great" + " "+ magicians_)
+}
 }
 
 make_great();
+
 
 
 //Question : 43 Unchanged Magicians: Start with your work from Exercise 40. Call the function make_great() with a copy of the array of magicians’ names. Because the original array will be unchanged, return the new array and store it in a separate array. Call show_magicians() with each array to show that you have one array of the original names and one array with the Great added to each magician’s name.
