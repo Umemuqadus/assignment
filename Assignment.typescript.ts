@@ -131,12 +131,19 @@ for (let invite of guests_list){console.log(` ${invite}, I'm throwing a party th
 // Question : 13  Changing Guest List: You just heard that one of your guests can’t make the dinner, so you need to send out a new set of invitations. You’ll have to think of someone else to invite
 
 
-guests_list[2] = "Aliya"     //Unfortunately, hadiqa can't make it. so , I am inviting Aliya.
+guests_list[2] = "Aliya"     .
 
 for (let invitation of guests_list){console.log(` ${invitation} I'm throwing a party this Sunday at 10 pm! Feel free to stop by`)};
 
 
-// Question : 14  More Guests: You just found a bigger dinner table, so now more space is available. Think of three more guests to invite to dinner.
+//Question : 14 Add a print statement stating the name of the guest who can't make it.
+
+
+let message_to_guests = "Unfortunately ,Hadiqa can't make it. So, I am replacing Hadiqa with Aliya ";
+console.log(message_to_guests)
+
+
+// Question : 15  More Guests: You just found a bigger dinner table, so now more space is available. Think of three more guests to invite to dinner.
 
 //• Start with your program from Exercise 15. Add a print statement to the end of your program informing people that you found a bigger dinner table.
 
@@ -174,7 +181,7 @@ for (let Guests of guests_list ){
     console.log(`${Guests} , I am throwing a party at my home on sunday`)
 };
 
-//15. Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, and you have space for only two guests.
+//Question : 16 Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, and you have space for only two guests.
 //• Start with your program from Exercise 16. Add a new line that prints a message saying that you can invite only two people for dinner.
 
 
@@ -199,7 +206,7 @@ console.log(msg);
 console.log(msg_);
 
 
-// Question : 16 Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
+// Question : 17 Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
 
 
 let index_error = ["Aliya" , "Altaf"];
@@ -210,7 +217,7 @@ console.log(index_error[2] + message );
 console.log(index_error[1] +  " "+message);
 
 
-// Question : 17 They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
+// Question : 18 They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
 
 
 const bio_data = {
@@ -220,7 +227,7 @@ const bio_data = {
 console.log(bio_data);
 
 
-//Question : 18 Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your prediction for the results of each test. Your code should look something like this:
+//Question : 19 Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your prediction for the results of each test. Your code should look something like this:
 //et car = 'subaru';
 //console.log("Is car == 'subaru'? I predict True.")
 //console.log(car == 'subaru')
@@ -250,7 +257,7 @@ let object = "table";
 if(object == "Table"){console.log("I PREDICT TRUE")};
 
 
-//Question : 19 More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, write more tests. Have at least one True and one False result for each of the following:
+//Question : 20 More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, write more tests. Have at least one True and one False result for each of the following:
 
 
 //• Tests for equality and inequality with strings
@@ -365,7 +372,7 @@ if(Items_.includes("Chicken")){
     console.log("False")
 );
 
-//Question : 20 Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number of people you are inviting to dinner.
+//Question : 21 Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number of people you are inviting to dinner.
 
 
 let msg_to_guests = "I am inviting 2 peoples.";
@@ -378,7 +385,7 @@ let favorite_fruits_ :string[]= ["Apple" ,"Papaya" ,"Apricot"];
 console.log(favorite_fruits_);
 
 
-//Question : 21 Favorite Fruit: Make a array of your favorite fruits, and then write a series of independent if statements that check for certain fruits in your array.
+//Question : 22 Favorite Fruit: Make a array of your favorite fruits, and then write a series of independent if statements that check for certain fruits in your array.
 
 
 let favorite_fruits = [ "Apple" , "Mango" ,"Papaya" ,"Apricot"];
@@ -447,7 +454,7 @@ if(Favorite_fruits.includes("Blueberry")){
 
 
 
-//Question : 22 Checking Usernames: Do the following to create a program that simulates how websites ensure that everyone has a unique username.
+//Question : 23 Checking Usernames: Do the following to create a program that simulates how websites ensure that everyone has a unique username.
 //• Make a list of five or more usernames called current_users.
 
 
@@ -469,13 +476,11 @@ console.log(`Username '${new_users[i]}' is available.`)
 };
 
 
-//Question : 23. No Users: Add an if test to make sure the list of users is not empty.
+//Question : 24. No Users: Add an if test to make sure the list of users is not empty.
 //• If the list is empty, print the message We need to find some users!
 
 
-// Array of users
 let users: string[] = [];
-
 
 if (users.length === 0) {
     console.log("We need to find some users!")
@@ -485,38 +490,26 @@ if (users.length === 0) {
         console.log(user);
     }
 };
-
-// Remove all usernames from the array
-users = [];
-
-// Check if the list of users is not empty after removal
-if (users.length === 0) {
-    console.log("Now the list of users is empty.");
-} else {
-    console.log("List of users after removal:");
-    for (let user of users) {
-        console.log(user);
-    }
-}
+.
 
 
 
-//Question : 24. Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user after they log in to a website. Loop through the array, and print a greeting to each user:
+//Question : 25. Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user after they log in to a website. Loop through the array, and print a greeting to each user:
 //• If the username is 'admin', print a special greeting, such as Hello admin, would you like to see a status report?
 //• Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.\
 
 
 let username_ = ["taniya" , "john" ,"eric" ,"admin", "kiran"];
 for (let username of username_) {
-if (username.toLowerCase() === 'admin') {
+if (username === 'admin') {
   console.log("Hello admin, would you like to see a status report?");
 } else {
-  console.log(`Hello ${username}, thank you for logging in again.`);
+  console.log(`Hello ${username}, thank you for logging `);
     }
 }
 
 
-//Question :25 . Pizzas: Think of at least three kinds of your favorite pizza. Store these pizza names in a array, and then use a for loop to print the name of each pizza.
+//Question :26. Pizzas: Think of at least three kinds of your favorite pizza. Store these pizza names in a array, and then use a for loop to print the name of each pizza.
 //• Modify your for loop to print a sentence using the name of the pizza instead of printing just the name of the pizza. For each pizza you should have one line of output containing a simple statement like I like pepperoni pizza.
 //• Add a line at the end of your program, outside the for loop, that states how much you like pizza. The output should consist of three or more lines about the kinds of pizza you like and then an additional sentence, such as I really love pizza!                    
 
@@ -533,7 +526,7 @@ for(let pizaas of pizza){
 
 
 
-//Question : 26 Animals: Think of at least three different animals that have a common characteristic. Store the names of these animals in a list, and then use a for loop to print out the name of each animal.  • Add a line at the end of your program stating what these animals have in common. You could print a sentence such as Any of these animals would make a great pet!
+//Question : 27 Animals: Think of at least three different animals that have a common characteristic. Store the names of these animals in a list, and then use a for loop to print out the name of each animal.  • Add a line at the end of your program stating what these animals have in common. You could print a sentence such as Any of these animals would make a great pet!
 
 
 let animals = ["Cat" , "Dog" ];
@@ -552,7 +545,7 @@ for(let animal_ of animals){
 console.log("cat and dog both have sharp teeth , both are most widely kept pet animals , and both eat meat.");
 
 
-// Question :27 T-Shirt: Write a function called make_shirt() that accepts a size and the text of a message that should be printed on the shirt. The function should print a sentence summarizing the size of the shirt and the message printed on it. Call the function.
+// Question :28 T-Shirt: Write a function called make_shirt() that accepts a size and the text of a message that should be printed on the shirt. The function should print a sentence summarizing the size of the shirt and the message printed on it. Call the function.
 
 
 function make_shirt( size : string, message : string)
@@ -560,7 +553,7 @@ function make_shirt( size : string, message : string)
 make_shirt("small " , "Stay happy");
 
 
-// Question : 28 Large Shirts: Modify the make_shirt() function so that shirts are large by default with a message that reads I love TypeScript. Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.
+// Question : 29 Large Shirts: Modify the make_shirt() function so that shirts are large by default with a message that reads I love TypeScript. Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.
 
 
 function make_shirts( size_ : string = "large" , message :string = "I love typescript" ){
@@ -571,7 +564,7 @@ make_shirts("medium");
 make_shirts("Extra small" , "Vibe");
 
 
-//Question : 29 Cities: Write a function called describe_city() that accepts the name of a city and its country. The function should print a simple sentence, such as Karachi is in Pakistan. //Give the parameter for the country a default value. Call your function for three different cities, at least one of which is not in the default country.
+//Question : 30 Cities: Write a function called describe_city() that accepts the name of a city and its country. The function should print a simple sentence, such as Karachi is in Pakistan. //Give the parameter for the country a default value. Call your function for three different cities, at least one of which is not in the default country.
 
 
 function describe_city( City :string = "" , country:string = "Pakistan"){console.log(`${City} is in ${country}`)}
@@ -581,7 +574,7 @@ describe_city("islamabad");
 describe_city("Dehli" ,"India");
 
 
-// Question : 30 City Names: Write a function called city_country() that takes in the name of a city and its country. The function should return a string formatted like this:
+// Question : 31 City Names: Write a function called city_country() that takes in the name of a city and its country. The function should return a string formatted like this:
 //"Lahore, Pakistan"
 //Call your function with at least three city-country pairs, and print the value that’s returned.
 
@@ -593,7 +586,7 @@ city_country("\"Peshawar , Pakistan\"");
 city_country("\"Tokyo  , Japan\"");
 
 
-//Question : 31 Magicians: Make a array of magician’s names. Pass the array to a function called show_magicians(), which prints the name of each magician in the array.
+//Question : 32 Magicians: Make a array of magician’s names. Pass the array to a function called show_magicians(), which prints the name of each magician in the array.
 
 
 let magician_names = ["Atif" ,"Adrian" ,"Tom"];
@@ -601,7 +594,7 @@ function magicians(x :string[] = magician_names){console.log(`${magician_names}`
 magicians();
 
 
-// Quesytion : 32 Sandwiches: Write a function that accepts a array of items a person wants on a sandwich. The function should have one parameter that collects as many items as the function call provides, and it should print a summary of the sandwich that is being ordered. Call the function three times, using a different number of arguments each time.
+// Quesytion : 33 Sandwiches: Write a function that accepts a array of items a person wants on a sandwich. The function should have one parameter that collects as many items as the function call provides, and it should print a summary of the sandwich that is being ordered. Call the function three times, using a different number of arguments each time.
 
 
 let Sandwhich = ["Cheese","Tomato","Chicken" ];
@@ -613,14 +606,14 @@ Order("Sauce" , "Beef patty" , "onion");
 Order("Cheese ", "patty");
 
 
-// Question : 33    Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each character combination, "\t" and "\n", at least once. Print the name once, so the whitespace around the name is displayed. Then print the name after striping the white spaces
+// Question : 34    Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each character combination, "\t" and "\n", at least once. Print the name once, so the whitespace around the name is displayed. Then print the name after striping the white spaces
 
 
 let Person_name =  "\t \n Nayab \n \t";
 console.log(Person_name)
 
 
-// Questio : 34  Stages of Life: Write an if-else chain that determines a person’s stage of life. Set a value for the variable age, and then:
+// Questio : 35  Stages of Life: Write an if-else chain that determines a person’s stage of life. Set a value for the variable age, and then:
 //• If the person is less than 2 years old, print a message that the person is a baby.
 //• If the person is at least 2 years old but less than 4, print a message that the person is a toddler.
 //• If the person is at least 4 years old but less than 13, print a message that the person is a kid.
@@ -651,7 +644,7 @@ if ( age >= 65){
 };
 
 
-// Question : 35  Alien Colors #1: Imagine an alien was just shot down in a game. Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
+// Question : 36  Alien Colors #1: Imagine an alien was just shot down in a game. Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
 //• Write an if statement to test whether the alien’s color is green. If it is, print a message that the player just earned 5 points.
 //• Write one version of this program that passes the if test and another that fails. (The version that fails will have no output.)
 
@@ -662,7 +655,7 @@ if (alien_Color.includes("green")) {
     console.log("Player just earned 5 points.");}
 
 
-// Question : 36  Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an if-else chain.
+// Question : 37  Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an if-else chain.
 //• If the alien’s color is green, print a statement that the player just earned 5 points for shooting the alien.
 //• If the alien’s color isn’t green, print a statement that the player just earned 10 points.
 //• Write one version of this program that runs the if block and another that runs the else block.
@@ -678,7 +671,7 @@ else if(alien__Color.includes("pink")){
 }
 
 
-// Question : 37  Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.
+// Question : 38  Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.
 //• If the alien is green, print a message that the player earned 5 points.
 //• If the alien is yellow, print a message that the player earned 10 points.
 //• If the alien is red, print a message that the player earned 15 points.
@@ -695,7 +688,7 @@ else if(alien_Colors.includes("red")) { console.log("Player just earned 15 point
 }
 
 
-//	Question : 38. Seeing the World: Think of at least five places in the world you’d like to visit.
+//	Question : 39. Seeing the World: Think of at least five places in the world you’d like to visit.
 //• Store the locations in a array. Make sure the array is not in alphabetical order.
 //• Print your array in its original order.
 //• Print your array in alphabetical order without modifying the actual list.
@@ -735,14 +728,14 @@ places.sort();
 console.log([...places].sort().reverse())
 
 
-// Question : 39  Album: Write a function called make_album() that builds a Object describing a music album. The function should take in an artist name and an album title, and it should return a Object containing these two pieces of information. Use the function to make three dictionaries representing different albums. Print each return value to show that Objects are storing the album information correctly. Add an optional parameter to make_album() that allows you to store the number of tracks on an album. If the calling line includes a value for the number of tracks, add that value to the album’s Object. Make at least one new function call that includes the number of tracks on an album.
+// Question : 40  Album: Write a function called make_album() that builds a Object describing a music album. The function should take in an artist name and an album title, and it should return a Object containing these two pieces of information. Use the function to make three dictionaries representing different albums. Print each return value to show that Objects are storing the album information correctly. Add an optional parameter to make_album() that allows you to store the number of tracks on an album. If the calling line includes a value for the number of tracks, add that value to the album’s Object. Make at least one new function call that includes the number of tracks on an album.
 
 
 
 interface Album {
     artist: string;
     title: string;
-    tracks?: number;
+    tracks: number;
 }
 function album(artist: string, title: string, tracks?: number){
     console.log(`artist : ${artist} , title :${title} , tracks : ${tracks}`)
@@ -751,22 +744,22 @@ album("Taylor Swift" , "Lover" , 4)
 album("Salena Gomaz" , "Rare" , 13)
 
 
-// Question : 40  Magicians: Make a array of magician’s names. Pass the array to a function called show_magicians(), which prints the name of each magician in the array.
+// Question : 41  Magicians: Make a array of magician’s names. Pass the array to a function called show_magicians(), which prints the name of each magician in the array.
 
 
 let magicians_name: string[] = ["Harry Houdini", "Criss Angel"];
 
-function show_magicians(names: string[] = magicians_name) {
-    console.log("The names of the magicians are:");
-    names.forEach(name => {
-        console.log(name);
+function show_magicians(names__: string[] = magicians_name) {
+    console.log("The names of the magicians are");
+    names__.forEach(name__ => {
+        console.log(name__);
     });
 }
 
 show_magicians();
 
 
-//Question : 41  Great Magicians: Start with a copy of your program from Exercise 39. Write a function called make_great() that modifies the array of magicians by adding the phrase the Great to each magician’s name. Call show_magicians() to see that the list has actually been modified.
+//Question : 42  Great Magicians: Start with a copy of your program from Exercise 39. Write a function called make_great() that modifies the array of magicians by adding the phrase the Great to each magician’s name. Call show_magicians() to see that the list has actually been modified.
 
 
 
@@ -781,7 +774,7 @@ console.log(magician);
 make_great();
 
 
-//Question : 42 Unchanged Magicians: Start with your work from Exercise 40. Call the function make_great() with a copy of the array of magicians’ names. Because the original array will be unchanged, return the new array and store it in a separate array. Call show_magicians() with each array to show that you have one array of the original names and one array with the Great added to each magician’s name.
+//Question : 43 Unchanged Magicians: Start with your work from Exercise 40. Call the function make_great() with a copy of the array of magicians’ names. Because the original array will be unchanged, return the new array and store it in a separate array. Call show_magicians() with each array to show that you have one array of the original names and one array with the Great added to each magician’s name.
 
 
 make_great()
@@ -792,7 +785,7 @@ show_magicians()
 
 
 
-// Question : 43  Ordinal Numbers: Ordinal numbers indicate their position in a array, such as 1st or 2nd. Most ordinal numbers end in th, except 1, 2, and 3.
+// Question : 44  Ordinal Numbers: Ordinal numbers indicate their position in a array, such as 1st or 2nd. Most ordinal numbers end in th, except 1, 2, and 3.
 //• Store the numbers 1 through 9 in a array.
 //• Loop through the array.
 //• Use an if-else chain inside the loop to print the proper ordinal ending for each number. Your output should read "1st 2nd 3rd 4th 5th 6th 7th 8th 9th", and each result should be on a separate line.
@@ -819,7 +812,9 @@ break;
 
 
 
-//Question : 44 Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
+//Question : 45 Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
+
+
 let cities_ = ["Karachi" , "Islamabad" , "Lahore" , "Hyderabad" , "Gujrat"]
 console.log(`List of cities is ${cities_}`)
 
